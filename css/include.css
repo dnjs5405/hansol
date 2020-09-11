@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/*헤더*/
+
+#header{
+    height: 43px;
+    line-height: 43px;
+    position: relative;
+    margin: 20px 50px; /*gnb와util을 absolute로 띄워놨기때문에 padding으로 주면 양옆에 50px이 안먹음*/
+    font-size: 14px;
+    text-align: center; /*gnb감싸고 있는 nav가 있다면 거기에 주면 된다*/
+}
+
+#header h1{
+    position: absolute;
+    left: 0; /*생략가능*/
+    top: 0; /*생략가능*/
+    width: 110px;
+    height: 43px;
+    background: url(../images/sp_com.png)no-repeat -300px -5px;
+    text-indent: -9999px;
+}
+#header h1 a{
+    display: block; /*a태그 활성화*/
+}
+
+
+.gnb{display: inline-block;} /*float:left 속성 바꾸기*/
+.gnb li{
+    float: left;  /*부모 속성으로 nav를 감싸서 text-align줘도 됨. 없어서 header에 줬음*/
+    margin: 0 20px;
+}
+.gnb li a{}
+
+
+.util{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+}
+.util li{
+    float: left;
+}
+
+.util li::after{
+    content:"";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background-color: #333;
+    margin: 0 5px;
+}
+
+.util li:last-child::after{
+    display:none;
+}
+
+.util li a{}
+
+
+
+/*푸터*/
+
+#footer{
+    font-size: 14px;
+    color: #fff;
+    background: #4c5459;
+}
+
+.fTop{
+    padding: 10px 0;
+    line-height: 40px;
+    height: 40px;
+    background: #383f43;
+}
+
+.fMenu{float: left;}
+.fMenu li{
+    float: left;
+}
+
+.fMenu li::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    margin:0 5px;
+    background-color: #fff;
+}
+.fMenu li:last-child::after{
+    display: none;
+}
+
+.fMenu li a{
+    color: #fff;
+}
+
+.csFamily{
+    float: right;
+}
+
+.csFamily>div{
+    line-height: 40px;
+    height: 40px;
+    padding: 0 15px;
+    float: left;
+}
+.csBox{
+    background: #2a3033;
+}
+.csBox span{
+    font-weight: bold;
+    vertical-align: middle;
+}
+.csBox .csNum{
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 22px;
+}
+.familySite{
+    width: 150px;
+    margin-left: 10px;
+    background:#fff url(../images/arrow.png) no-repeat 95% center;
+    color: #333; 
+}
+
+.fBottom{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.fLogo{
+    margin-bottom: ;
+    margin: 0 auto;
+    width: 130px;
+    height: 50px;
+    background: url(../images/sp_com.png)no-repeat -149px 0;
+    text-indent: -9999px;
+}
+
+.fInfo{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.fInfo li{
+    margin-right: 15px;
+    margin-top: 20px;
+    float: left;
+}
+
+.fInfo li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 8px;
+    margin-right: 5px;
+}
+.fInfo li:last-child::after{
+    display: none;
+}
+
+.fInfo li a{} 
+
+.fBottom p{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

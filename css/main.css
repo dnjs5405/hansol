@@ -1,0 +1,435 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+
+.mainSlider{
+    margin: 0 50px;
+    height: 690px; 
+    background: url(../images/main_img.jpg)no-repeat center center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.sliderTxt{
+    padding-top: 290px;
+    font-size: 20px;
+}
+.sliderTxt h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.sliderTxt h2 span{
+    display: block;
+}
+.sliderTxt p{}
+
+.sliderBtn{
+    width: 25px;
+    height: 45px;
+    background: url(../images/sp_com.png) no-repeat -128px -61px;
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    
+}
+.sliderBtn a{
+    display: block;
+    height: 100%;
+}
+
+.prevBtn{left: 30px}
+.prevBtn a{}
+
+.nextBtn{
+    background-position: -159px -61px;
+    right: 30px;
+}
+.nextBtn a{
+   
+}
+
+
+/*메인컨텐츠01*/
+
+.mainCon01{
+    padding: 50px 0;
+    text-align: center;
+}
+.mainCon01 ul{
+    display: inline-block;
+}
+.mainCon01 li{
+    font-size: 14px;
+    margin: 0 30px;
+    float: left;
+}
+.mainCon01 li a{}
+.mainCon01 li a span{
+    margin-bottom: 25px;
+    width: 64px;
+    height: 53px;
+    display: block;
+    background-image: url(../images/sp_com.png); 
+    text-indent: -9999px;
+}
+
+.mainCon01 li p{}
+
+.con01Icon01{background-position: -3px -118px;}
+.con01Icon02{background-position: -74px -118px;}
+.con01Icon03{background-position: -149px -117px;}
+.con01Icon04{background-position: -219px -118px;}
+.con01Icon05{background-position: -291px -118px;}
+.con01Icon06{background-position: -364px -118px;}
+
+
+/*메인컨텐츠01호버*/
+.mainCon01 li:hover span{
+    background-position-y:-184px; 
+}
+
+.mainCon01 li:hover .con01Icon03{
+     background-position-y:-183px; 
+}
+
+.mainCon01 li:hover p{
+    color: #2d5b79;
+}
+
+
+/*메인컨텐츠02*/
+
+.mainCon02{
+    padding-bottom: 50px;;
+    background: #dfd9d1;
+}
+
+.mainCon02 .inner{
+    position: relative;
+}
+
+.mainCon02 .sliderBtn{
+    z-index: 1;
+}
+.mainCon02 .prevBtn{left: -50px;}
+.mainCon02 .nextBtn{right: -50px;}
+.con02Tit{
+    padding: 40px 0;
+    text-align: center;
+}
+.con02Tit h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.con02Tit p{}
+
+.con02Main{}
+
+.con02Left{
+    float: left;
+    position: relative;
+}
+.con02Left img{
+    display: block; /*텍스트박스 공간 빼기*/
+}
+
+.con02Txt{
+    box-sizing: border-box; /*텍스트박스에 padding줬을때 정해둔 사이즈보다 커지지 않게 하기 위해서.*/
+    padding: 30px 15px; 
+    color: #fff;
+    right: 0;
+    top: 0;
+    position: absolute;
+    height: 100%; 
+    width: 240px;
+    background: rgba(0,0,0,0.6)
+}
+.con02Txt h4{
+    font-size:13px;
+}
+.con02Txt p{
+    margin: 15px 0;
+    font-size:20px;}
+
+.con02Txt span{font-weight: bold;}
+.con02Txt .lastTxt{font-size: 14px;}
+
+.moreBtn{
+    position: absolute;
+    width: 210px;
+    line-height: 40px;
+    bottom: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+.moreBtn a{
+    display: block;
+    color: #fff;
+}
+
+.con02Right{
+    background: #fff;
+    width: 400px;
+    height: 430px;
+    float: left;
+}
+
+.con02List{
+    padding: 0 20px;
+}
+.con02List li{
+    padding-top: 22px
+}
+.con02List li a{}
+.con02List li img{
+    width: 80px;
+    vertical-align: middle;
+}
+.con02List li p{
+    margin-left: 10px;
+    font-size: 16px;;
+    display: inline-block;
+    vertical-align: middle
+}
+.con02List li p span{
+    font-weight: bold;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+
+
+/*메인컨텐츠03*/
+
+.mainCon03{
+    padding-top: 50px;
+}
+
+.mainCon03>div{
+    width: 285px;
+    height: 285px;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    background-size: cover;
+}
+
+.mainCon03>div a{}
+.mainCon03>div h3{
+    padding-top: 100px;
+}
+
+.con03Menu01 h3, .con03Menu03 h3{
+    color: #fff;
+}
+
+
+.con03Menu01{
+    background: url(../images/mainrow3_img1.jpg) no-repeat center center;
+}
+.con03Menu02{
+    background: url(../images/mainrow3_img2.jpg) no-repeat center center;
+}
+.con03Menu03{
+    background: url(../images/mainrow3_img3.jpg) no-repeat center center;
+}
+.mainCon03 .con03Menu04{
+    background: #F2F0ED;
+    margin-right: 0;
+}
+
+.mainCon03 .con03Menu04 h3{
+    padding-top: 30px;
+}
+.con03Menu04 form{padding: 20px;}
+
+.con03Menu04 select, .con03Menu04 input, .con03Menu04 button{
+    border: 0;
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.con03Menu04 button{
+    margin-top: 42px;
+    cursor: pointer;
+    background: #2d5b79;
+    color: #fff;
+}
+
+.con03Menu04 select{
+    margin-bottom: 10px;
+    appearance:none;
+    -webkit-appearance:none;
+    background: #fff url(../images/arrow.png) no-repeat 95% center;
+    
+}
+
+.con03Menu04 input{}
+
+
+
+/*메인컨텐츠03호버*/
+
+.moreBtn:hover a{     /*a태그를 넣음으로 글자색까지 변경 가능*/
+    background: #fff;
+    color: #000;
+}
+
+.mainCon03>div a{
+    display: block;
+    height: 100%;
+}
+
+.mainCon03>div:hover a{
+    background: rgba(45,91,121,0.6);
+}
+
+.mainCon03>div p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #fff;
+    display: none;
+}
+
+.mainCon03>div:hover p{
+    display: block;
+}
+
+.con03Menu02:hover h3{
+    color: #fff;
+}
+/**/
+
+/*메인컨텐츠04*/
+
+.mainCon04{
+    margin-top: 20px;
+}
+
+.con04Box{
+    width: 590px;
+    background: #F1EFEC;
+    float: left;
+    margin-right: 20px;
+}
+.con04Box h3{
+    position: relative;
+    border-bottom: solid 1px #fff;
+    line-height: 60px;
+    text-align: center;
+    color: #2d5b79;
+    font-size: 20px;
+}
+.plusBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: #fff url(../images/sp_com.png) no-repeat -199px -63px;
+}
+
+.con04Box ul{}
+.con04Box li{}
+.con04Box li a{}
+.con04Box li p{
+    font-size: 14px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.con04Box li span{
+    font-size: 12px;
+    color: #999;
+}
+
+.noticeList{}
+.noticeList li{
+    height: 137px; /*오른쪽 박스 height에 맞추려면 중간에 border선이 중간까지밖에 안옴 
+                     오른쪽 박스 height198-h3의 height61=137px로 했음*/
+    padding: 20px; 
+    box-sizing: border-box;
+    border-right: 1px solid #fff;
+    width: 50%;
+    float: left;
+}
+.noticeList li:last-child{
+    border-right: 0;
+}
+
+.noticeList li a{}
+.noticeList li p{}
+.noticeList li span{
+    display: block;
+    padding: 10px 0;
+}
+
+.news{
+    margin-right: 0;
+}
+.newsList{}
+.newsList li{
+    line-height: 45px;
+    position: relative;
+    padding: 0 20px;
+    border-bottom: solid 1px #fff;
+}
+.newsList li:last-child{
+    border-bottom: 0;
+}
+.newsList li a{}
+.newsList li p{
+    width: 70%;
+}
+.newsList li span{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+
+/*메인컨텐츠05*/
+
+.mainCon05{
+    margin-top: 50px;
+    padding: 50px 0;
+    background: url(../images/mainrow4_bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.con05Menu{}
+.con05Menu li{
+    position: relative;
+    width: 285px;
+    margin-right: 20px;
+    float: left;
+}
+
+.con05Menu li:last-child{
+    margin-right: 0;
+}
+.con05Menu li a{}
+.con05Menu li img{
+    display: block; /*이거 안주면 이미지 밑에 배경 남음*/
+    width: 100%;
+}
+
+.con05Txt{
+    font-size: 14px;
+    width: 100%;
+    position: absolute;
+    bottom:30px;
+    text-align: center; /*h2태그와 last-shild태그 말곤 다 줘도 됨*/
+}
+.con05Txt h2{}

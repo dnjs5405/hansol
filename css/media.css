@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/*웹뷰*/
+.panel,.mCon03Menu04,.mMainCon04{display: none;}
+
+
+
+/*모바일뷰*/
+
+@media screen and (max-width:768px){
+    /*리셋*/
+    body{min-width: auto;}
+    .inner{width: auto;}
+    
+    /*안보임처리*/
+    .gnb,.util,.mainCon02,.con03Menu04,.mainCon03>div:hover p,.mainCon04,.fInfo,.fLogo{display: none;}
+    
+    
+    /*보임처리*/
+    .panel{
+        width: 16px;
+        height: 15px;
+        background: url(../images/sp_com.png)no-repeat -227px -98px;
+        background-size: 400px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 7px;
+        text-indent: -9999px;
+    }
+    .panel a{
+        display: block; 
+        height: 100%;
+    }
+    .mCon03Menu04{display: block;}
+    .mMainCon04{display: block;}
+    
+    
+    /*헤더*/
+    #header{
+        height: auto;
+        margin:10px 20px;
+    }
+    #header h1{
+        background-size: 400px;
+        background-position: 0 0;
+        width: 70px;
+        height: 28px;
+        position: static;
+    }
+    
+    /*메인슬라이더*/
+    .mainSlider{
+        padding: 40% 0;
+        margin:0; 
+        height: auto;
+        background-size: cover;
+    }
+    .sliderTxt{padding-top: 0; font-size: 11px;}
+    .sliderTxt h2{font-size: 14px;}
+    /*.sliderTxt h2 span{display: inline;}*/
+    
+    .sliderBtn{
+        width: 13px; 
+        height: 23px;
+        background-size: 400px;
+        background-position: -64px -30px;
+    }
+    
+    .nextBtn{background-position: -79px -30px; right: 10px;}
+    
+    .prevBtn{left: 10px;}
+    
+    
+    /*메인컨텐츠01*/
+    .mainCon01{padding: 20px 0;}
+    .mainCon01 ul{display: block;}
+    .mainCon01 li{
+        margin: 10px 0;
+        width: 33.33%;
+    }
+    .mainCon01 li a span{
+        margin: 0 auto;
+        margin-bottom: 5px;
+        width: 33px;
+        height: 33px;
+        background-size: 400px;
+    }
+    .con01Icon01{background-position: -1px -57px;}
+    .con01Icon02{background-position: -37px -57px;}
+    .con01Icon03{background-position: -73px -55px;}
+    .con01Icon04{background-position: -109px -57px;}
+    .con01Icon05{background-position: -145px -57px;}
+    .con01Icon06{background-position: -181px -57px;}
+    
+    .mainCon01 li:hover span{
+        background-position-y: -57px;
+    }
+    .mainCon01 li:hover .con01Icon03{
+        background-position-y: -55px;
+    }
+    
+    .mainCon01 li:hover p{color: #333;}
+    
+    
+    /*메인컨텐츠03*/
+    .mainCon03{
+        padding: 0 10px;
+    }
+    .mainCon03>div{
+        width: calc(50% - 5px);
+        height: auto;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .mainCon03 .con03Menu02{margin-right: 0;}
+    
+    .mainCon03>div:hover a{background: none;}
+    .con03Menu02:hover h3{color: #333;}
+    .mainCon03>div h3,.mainCon03 .con03Menu04 h3{
+        font-size: 15px;
+        padding: 45% 0;
+    }
+   
+    /*메인컨텐츠04*/
+    
+    .mMainCon04{
+        padding: 0 10px;
+    }
+    .mMainCon04 li{
+        font-size: 13px;
+        height: 45px;
+        line-height: 45px;
+        background: #f2f0ed;
+        margin-bottom: 10px;
+    }
+    .mMainCon04 li h4{
+        vertical-align: top;
+        display: inline-block;
+        width: 15%;
+        color: #2d5b79;
+        text-align: center;
+    }
+    .mMainCon04 li a{
+        vertical-align: top;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 70%;
+        display: inline-block;
+        padding-left: 5%;
+    }
+    .mMainCon04 li p{}
+    
+    
+    /*메인컨텐츠05*/
+    .mainCon05{
+        margin-top: 0;
+        padding: 20px 10px;
+        padding-bottom: 10px;
+    }
+    
+    .con05Menu li{
+        width: calc(50% - 5px);
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .con05Menu li:nth-child(2n){
+        margin-right: 0;
+    }
+    .con05Txt{font-size: 0;}
+    .con05Menu li img{}
+    .con05Menu li h2{
+        font-size: 15px;
+    }
+    
+    /*푸터*/
+    .fTop{
+        height: auto;
+    }
+    .fMenu{
+        width:300px;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .fMenu li{
+        float: none;
+        display: inline-block;
+    }
+    .fMenu li:nth-child(3)::after{
+        display: none;
+    }
+    .fBottom p{}   
+}
